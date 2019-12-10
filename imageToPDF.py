@@ -12,7 +12,7 @@ parser.add_argument('-od', '--output_dir', type=str, default=current_dir, help='
 parser.add_argument('-id', '--input_dir', type=str, default=current_dir, help='Default is current directory')
 parser.add_argument('-o', '--output_name', type=str, default='', help='Default is input directory name, Set file name, Not path')
 parser.add_argument('-e', '--extention', type=str, default='jpg', help='Default is \'jpg\', Set file extention without \'.\'')
-parser.add_argument('-q', '--quiet', default=False, action='store_true', help='Not print')
+parser.add_argument('-q', '--quiet', default=True, action='store_false', help='Not print')
 args = parser.parse_args()
 
 def imageToPDF(image_dir, output_path):
